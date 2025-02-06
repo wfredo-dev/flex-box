@@ -1,0 +1,135 @@
+*::before,
+*::after,
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body,
+html {
+  min-height: 100vh;
+}
+.hidden {
+  display: none !important;
+}
+
+.navbar,
+#navbar-list,
+#navbar-items {
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0px;
+  width: 100%;
+  padding: 0 300px;
+  #logo {
+    margin: 0 10px;
+    padding: 40px;
+  }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#navbar-list {
+  display: flex;
+}
+#navbar-list #navbar-items > a:hover {
+  text-decoration: underline;
+}
+#navbar-list #navbar-items > a {
+  color: black;
+  font-size: 1.2rem;
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  padding: 10px;
+}
+#navbar-list #navbar-items {
+  list-style: none;
+  width: 80px;
+}
+.navbar-mobile {
+  display: none;
+}
+.burger {
+  display: none;
+}
+#navbar-list-mobile {
+  list-style: none;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 1000px) {
+  .burger {
+    display: block;
+    padding: 10px;
+  }
+  body .hero-section {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .navbar {
+    display: none;
+  }
+  header {
+    padding: 0;
+  }
+  .navbar-mobile {
+    color: white;
+    background-color: black;
+    display: block;
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    padding: 20px 100px;
+    border: 1px solid black;
+  }
+
+  #navbar-list-mobile #navbar-items-mobile > a {
+    color: white;
+    text-decoration: none;
+  }
+}
+/* section part */
+section {
+  height: 100vh;
+}
+.hero-section {
+  padding-top: 140px;
+  padding-left: 140px;
+  padding-right: 140px;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  .hero-left {
+    flex: 1px;
+    width: 100%;
+    border: 1px solid black;
+  }
+  .hero-right {
+    flex: 1px;
+    border: 1px solid black;
+  }
+}
+.about {
+  width: 100vw;
+  padding-top: 100px;
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  .about-content {
+    h1 {
+      font-size: 3rem;
+    }
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

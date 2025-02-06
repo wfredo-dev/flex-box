@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header class="header" id="header">
+      <a href="#" id="logo"><img src="imgs/logo.png" alt="" width="200px" /></a>
+      <nav class="navbar" id="navbar">
+        <ul id="navbar-list">
+          <li id="navbar-items"><a href="">Abouts</a></li>
+          <li id="navbar-items"><a href="">Projects</a></li>
+          <li id="navbar-items"><a href="">Contacts</a></li>
+        </ul>
+      </nav>
+      <div class="burger" id="burger" onclick="toggleMenu()">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </header>
+    <nav class="navbar-mobile" id="navbarmobile">
+      <div class="burger" id="burgermobile" onclick="toggleMenu()">
+        <i class="fa-solid fa-x"></i>
+      </div>
+      <ul id="navbar-list-mobile">
+        <li id="navbar-items-mobile"><a href="">About</a></li>
+        <li id="navbar-items-mobile"><a href="">Projects</a></li>
+        <li id="navbar-items-mobile"><a href="">Contacts</a></li>
+      </ul>
+    </nav>
+    <section class="hero-section">
+      <div class="hero-left">s</div>
+      <div class="hero-right">a</div>
+    </section>
+    <section class="about" id="about">
+      <div class="about-content">
+        <h1>ABOUT</h1>
+      </div>
+    </section>
+    <script src="index.js"></script>
+  </body>
+</html>
